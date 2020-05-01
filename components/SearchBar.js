@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import { StyleSheet, Text, View, TextInput } from 'react-native';
+import { StyleSheet, View, TextInput } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
 import { deg } from 'react-native-linear-gradient-degree';
 
@@ -29,14 +29,14 @@ export default function Search(){
 const styles = StyleSheet.create({
     searchContainer: {
         width: "70%",
-        marginTop: "12%",
-        marginLeft: "14%",
+        marginTop: "13.4%",
+        marginLeft: "17%",
     },
     searchGradient:{
         borderRadius: 69
     },
     searchBar :{
-        padding: 5,
+        padding: 2,
         paddingLeft: 15,
         color: "black",
         
