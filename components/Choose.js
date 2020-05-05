@@ -23,7 +23,7 @@ export default function Choose(){
 const styles = StyleSheet.create({
     container:{
         flexDirection: "row",
-        marginTop: 50,
+        marginTop: 35,
     },
     text: {
         justifyContent: "center",
