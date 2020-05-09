@@ -1,7 +1,8 @@
 import React from 'react';
-import { StyleSheet, View, Image } from 'react-native';
+import { StyleSheet, View, Image, Text } from 'react-native';
 import Search from "./SearchBar"
-import Choose from "./Choose"
+
+
 
 export default function Navigation(){
     return(
@@ -10,7 +11,6 @@ export default function Navigation(){
                 <Image source = {require('../assets/search.png')} style = {styles.image}/>
             </View>
             <Search/>
-            <Choose/>
         </View>
     )
 }
@@ -24,5 +24,33 @@ const styles = StyleSheet.create({
         marginTop: "15%",
         marginLeft: "10%"
     },
+    buttons:{
+        flexDirection: "row",
+        marginTop: 35,
+        justifyContent: "space-around"
+    },
+    text: {
+        justifyContent: "center",
+        alignSelf: "center"
+    },
+    buttonContainer: {
+        width: "15%",
+        backgroundColor: "#7DABCE",
+        borderRadius: 60,
+        paddingTop: 10,
+        paddingBottom: 10
+    },
     
+    buttonContainer2: {
+        width: "200%"
+    },
+    buttonContainer3: {
+        width : "150%"
+    },
+    buttonContainer4: {
+        width : "150%"
+    },
+    currentChoose : {
+
+    }
 })

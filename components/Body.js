@@ -1,9 +1,11 @@
 import React, {useState} from 'react';
-import { StyleSheet, Text, View, FlatList,TouchableOpacity} from 'react-native';
+import { StyleSheet, Text, View, FlatList,} from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
 import { deg } from 'react-native-linear-gradient-degree';
 import * as Font from 'expo-font';
 import { AppLoading } from 'expo';
+import { TouchableOpacity } from 'react-native-gesture-handler';
+
 
 const getFonts = () => Font.loadAsync({
     "RedHat": require("../assets/fonts/RedHatText-Regular.ttf")
@@ -11,11 +13,11 @@ const getFonts = () => Font.loadAsync({
 
 
 
-export default function Body(){
+export default function Body({pressHandler}){
     const [quote, setQuote] = useState([
         {author: "Albert Einstein", text: "Two things are infinite: the universe and human stupidity; and I'm not sure about the universe.", id: "1"},
-        {author: "Albert Einstein", text: "The only thing that interferes with my learning is my education", id: "2"},
-        {author: "Albert Einstein", text: "Two things are infinite: the universe and human stupidity; and I'm not sure about the universe.", id: "3"},
+        {author: "Albert Einstein", text: "The only thing that interferes with my learning is my education.", id: "2"},
+        {author: "Markus", text: "An eye for an eye and world goes blind.", id: "3"},
     ])
     const [loadedFonts, setLoadedFonts] = useState(false)
     if(loadedFonts){
@@ -25,17 +27,17 @@ export default function Body(){
                     keyExtractor = {(item) => item.id}
                     data = {quote}
                     renderItem = {({item}) => (
-                        <TouchableOpacity style = {styles.itemContainer}  >
+                        <TouchableOpacity style = {styles.itemContainer} onPress = {() => pressHandler("ViewQuote", item)} >
                             <View>
                                 <LinearGradient
                                     colors={["rgba(202, 255, 148, 0.49) ", "rgba(152, 241, 255, 0.47)"]} {...deg(267)}
                                     style= {styles.LinearGradient}>
                                     <View>
                                         <View>
-                                            <Text>{item.text}</Text>
+                                            <Text style={{ fontFamily: 'RedHat', color: "white" }} numberOfLines={1} >{item.text}</Text>
                                         </View>
-                                        <View>
-                                            <Text>{item.author}</Text>
+                                        <View style = {styles.textAuthor} >
+                                            <Text style={{ fontFamily: 'RedHat', color: "white" }} >- {item.author}</Text>
                                         </View>
                                     </View>
                                 </LinearGradient>
@@ -60,16 +62,23 @@ export default function Body(){
 const styles = StyleSheet.create({
     container:{
         marginRight: "5%",
-        marginLeft: "5%"
-        
+        marginLeft: "5%",
+        marginTop: "5%",
+        flex:1 
     },
     itemContainer: {
         marginBottom: "10%"
     },
+
     LinearGradient: {
         borderRadius: 20,
         paddingLeft: 23,
         paddingRight: 29,
+        paddingTop: 10,
+        paddingBottom: 24
     },
-   
+    textAuthor:{
+        marginTop: 7,
+        alignSelf: "flex-end"
+    },
 })
