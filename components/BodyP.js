@@ -13,11 +13,11 @@ const getFonts = () => Font.loadAsync({
 
 
 
-export default function Body({pressHandler}){
+export default function BodyP({pressHandler}){
     const [quote, setQuote] = useState([
-        {author: "Albert Einstein", text: "Two things are infinite: the universe and human stupidity; and I'm not sure about the universe.", id: "1"},
-        {author: "Albert Einstein", text: "The only thing that interferes with my learning is my education.", id: "2"},
-        {author: "Mahatma Gandhi", text: "Live as if you were to die tomorrow. Learn as if you were to live forever.", id: "3"},
+        {author: "Jane Austen", text: "There is no charm equal to tenderness of heart.", id: "1"},
+        {author: "Francis of Assisi", text: "Lord, make me an instrument of thy peace. Where there is hatred, let me sow love.", id: "2"},
+        {author: "Edgar Allan Poe", text: "All that we see or seem is but a dream within a dream.", id: "3"},
     ])
     const [loadedFonts, setLoadedFonts] = useState(false)
     if(loadedFonts){

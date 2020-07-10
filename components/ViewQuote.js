@@ -45,7 +45,7 @@ export default function ViewQuote({ route }){
                                 style= {styles.LinearGradientButtons}
                                 >
                                     <View>
-                                        <Text style={{ fontFamily: 'RedHat', color: "white", fontSize: 12 }} numberOfLines={3}> Men strugle in the fight between emotions</Text>
+                                        <Text style={{ fontFamily: 'RedHat', color: "white", fontSize: 12 }} numberOfLines={3}> Some quote that is really related to above</Text>
                                     </View>
                                     <View>
                                         <Text style={{ fontFamily: 'RedHat', color: "white", fontSize: 12, alignSelf: "flex-end" }}> - Author</Text>
@@ -57,7 +57,7 @@ export default function ViewQuote({ route }){
                                 style= {styles.LinearGradientButtons}
                                 >
                                     <View>
-                                        <Text style={{ fontFamily: 'RedHat', color: "white", fontSize: 12 }} numberOfLines={3}> Men strugle in the fight between emotions</Text>
+                                        <Text style={{ fontFamily: 'RedHat', color: "white", fontSize: 12 }} numberOfLines={3}> Some quote that is really related to above</Text>
                                     </View>
                                     <View>
                                         <Text style={{ fontFamily: 'RedHat', color: "white", fontSize: 12, alignSelf: "flex-end" }}> - Author</Text>
@@ -69,7 +69,7 @@ export default function ViewQuote({ route }){
                                 style= {styles.LinearGradientButtons}
                                 >
                                     <View>
-                                        <Text style={{ fontFamily: 'RedHat', color: "white", fontSize: 12 }} numberOfLines={3}> Men strugle in the fight between emotions</Text>
+                                        <Text style={{ fontFamily: 'RedHat', color: "white", fontSize: 12 }} numberOfLines={3}> Some quote that is really related to above</Text>
                                     </View>
                                     <View>
                                         <Text style={{ fontFamily: 'RedHat', color: "white", fontSize: 12, alignSelf: "flex-end" }}> - Author</Text>
@@ -81,7 +81,7 @@ export default function ViewQuote({ route }){
                                 style= {styles.LinearGradientButtons}
                                 >
                                     <View>
-                                        <Text style={{ fontFamily: 'RedHat', color: "white", fontSize: 12 }} numberOfLines={3}> Men strugle in the fight between emotions</Text>
+                                        <Text style={{ fontFamily: 'RedHat', color: "white", fontSize: 12 }} numberOfLines={3}> Some quote that is really related to above</Text>
                                     </View>
                                     <View>
                                         <Text style={{ fontFamily: 'RedHat', color: "white", fontSize: 12, alignSelf: "flex-end" }}> - Author</Text>
@@ -93,7 +93,7 @@ export default function ViewQuote({ route }){
                                 style= {styles.LinearGradientButtons}
                                 >
                                     <View>
-                                        <Text style={{ fontFamily: 'RedHat', color: "white", fontSize: 12 }} numberOfLines={3}> Men strugle in the fight between emotions</Text>
+                                        <Text style={{ fontFamily: 'RedHat', color: "white", fontSize: 12 }} numberOfLines={3}> Some quote that is really related to above</Text>
                                     </View>
                                     <View>
                                         <Text style={{ fontFamily: 'RedHat', color: "white", fontSize: 12, alignSelf: "flex-end" }}> - Author</Text>

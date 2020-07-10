@@ -3,8 +3,9 @@ import { StyleSheet, View, Text } from 'react-native';
 import { LinearGradient } from '../node_modules/expo-linear-gradient';
 import { deg } from '../node_modules/react-native-linear-gradient-degree';
 import Navigation from "./Navik"
+import BodyP from "./BodyP"
 
-export default function Popular(){
+export default function Popular({navigation}){
     const pressHandler = (screen, param) => {
         navigation.navigate(screen, param)
       }
@@ -16,6 +17,7 @@ export default function Popular(){
             >
                 <Navigation/>
                 <View style = {styles.lineBorder}/>
+                <BodyP pressHandler = {pressHandler}/>
             </LinearGradient>
         </View>
     )
